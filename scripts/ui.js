@@ -1,6 +1,5 @@
 import { loadRecords, saveRecords } from './storage.js';
 import { compileRegex, highlight } from './search.js';
-
 export function renderTable(records, pattern) {
   const re = compileRegex(pattern);
   const tbody = document.querySelector('#records-body');
@@ -13,4 +12,3 @@ export function renderTable(records, pattern) {
     </tr>
   `).join('');
 }
-
